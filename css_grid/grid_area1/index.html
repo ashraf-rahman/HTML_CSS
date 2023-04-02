@@ -8,109 +8,61 @@
 </head>
 <body>
     <style>
-        .tag{
-            height: 600px;
-            width: 90%;
-            border: solid 1px black;
-             margin-left: 50px;
-             margin-top: 30px;
-             
-             
-            
-         }
-         .tag1{
-            height: 150px;
-            width: 90%;
-            border: solid 1px green;
-           margin-left: 60px;
-           margin-top: 30px;
-           display: flex;
+.tag{
+    background-color: #eee;
+    width: 90%;
+    margin: 50px 0 0 50px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  
+    grid-template-rows: 150px 150px 150px;
+
+    grid-gap: 20px;
+}
+.tag1{
+    background-color: rgb(68,68,68);
+    grid-column: 1/3;
+    border-radius: 10px;
+ }
+.tag2{
+    background-color: rgb(68,68,68);
+    grid-column: 3/5;
+    border-radius: 10px;
+}
+.tag3{
+    background-color: rgb(68,68,68);
+    border-radius: 10px;
+}
+.tag4{
+    background-color: rgb(68,68,68);
+    grid-column: 2/5;
+    border-radius: 10px;
+}
   
-         }
-    .tag2{
-        height: 150px;
-            width: 90%;
-            border: solid 1px green;
-           margin-left: 60px;
-           margin-top: 30px;
-           display: flex;
+.tag5{
+    background-color: rgb(68,68,68);
+    grid-column: 1/5;
+    border-radius: 10px;
 
-         }
-         .tag3{
-            height: 150px;
-            width: 90%;
-            border: solid 1px green;
-           margin-left: 60px;
-           margin-top: 30px;
-           display: flex;
-
+ }
+ h1{
+    
+    color: #eee;
+ }
  
-         }
-         .A{
-            height: 150px;
-            width: 45%;
-            border: solid 1px black;
-           margin-left: 107px;
-           border-radius: 10px;
-           background-color: rgb(68,68,68);
-         }
-         .B{
-            height: 150px;
-            width: 45%;
-            border: solid 1px black;
-            border-radius: 10px;
-            background-color: rgb(68,68,68);
-
-         }
-         .C{
-            height: 150px;
-            width: 20%;
-            border: solid 1px black;
-            border-radius: 10px;
-            background-color: rgb(68,68,68);
-
-         }
-         .D{
-            height: 150px;
-            width: 75%;
-            border: solid 1px black;
-            border-radius: 10px;
-            margin-left: 53px;
-            background-color: rgb(68,68,68);
-
-         }
-         .E{
-            height: 150px;
-            width: 100%;
-            border: solid 1px black;
-            border-radius: 10px;
-            background-color: rgb(68,68,68);
-
-         }
-      h1{
-        margin-left: 50px;
-        margin-top: 50px;
-        color: aliceblue;
-      }
-     
-     
  
+ 
+
     </style>
-
 <div class="tag">
-    <div class="tag1">
-        <div class="B"><h1>A</h1></div>
-        <div class="A"><h1>B</h1></div>
-    </div>
-    <div class="tag2">
-        <div class="C"><h1>C</h1></div>
-        <div class="D"><h1>D</h1></div>
-    </div>
-    <div class="tag3">
-        <div class="E"><h1>E</h1></div>
-        
-    </div>
-</div>
-  
+    <div class="tag1"><h1>A</h1></div>
+    <div class="tag2"><h1>B</h1></div>
+    <div class="tag3"><h1>C</h1></div>
+    <div class="tag4"><h1>D</h1></div>
+    <div class="tag5"><h1>E</h1></div>
+    
+ </div>
+
+
 </body>
 </html>
